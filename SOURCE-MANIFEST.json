@@ -2,27 +2,27 @@
   "schema": "fuego-nero-flow.assembled-source.v1",
   "packageName": "@fuego-nero/flow-contract",
   "packageVersion": "0.1.0-alpha.1",
-  "candidateManifestSHA256": "515e52d8d5b4a890ec9aac16240b3ce0a838354a576d95399da0ca946604723b",
+  "candidateManifestSHA256": "d09b278ee0708bca36d8a0a07c832e2e30c47352437bf2b950724607a1239018",
   "files": [
     {
       "path": "README.md",
-      "bytes": 3520,
-      "sha256": "b69ecd0775e3b27847fadba8b9f0f1220f7cf5297f51299542f2dd11f3e32ff1"
+      "bytes": 3978,
+      "sha256": "858a987208a98c35e21864bb0c3fb6de14ec85e8044b8f87f5c1a094c110ecfd"
     },
     {
       "path": "capabilities.json",
-      "bytes": 1213,
-      "sha256": "66949c8941657ac049f893185d0262dbe6b3ebccd923d0e784ebadc5609c8f85"
+      "bytes": 1313,
+      "sha256": "7615926c5da16aceffb74a2771b04a99b68a919c747b2738fcefa71190873acd"
     },
     {
       "path": "conformance/RECEIVER-CONTRACT.md",
-      "bytes": 10884,
-      "sha256": "35fad4eb900eab5d86342892c0d64db5d79327797c72bb516f9f99a6c1822dff"
+      "bytes": 11703,
+      "sha256": "540a6e87e2de8ed77f508d09afdae3c70d306c859504b953afa0558e3248359d"
     },
     {
       "path": "conformance/build-schema.mjs",
       "bytes": 6887,
-      "sha256": "52afc580995dbe9bd39ac1f7f414c57e30efee7c791bf61466a5ff951ecdc227"
+      "sha256": "957e3dbbb59f5400d89509acf53f417f940f309f4b361d9e0d32c116ad7b804a"
     },
     {
       "path": "conformance/contract.mjs",
@@ -85,9 +85,14 @@
       "sha256": "c83b165de1dba53211fae82693042e05b97648357bbbfde9dcbeea51265916af"
     },
     {
+      "path": "conformance/principal-regressions.test.mjs",
+      "bytes": 2226,
+      "sha256": "09bc2b4d1732452d122c7e80752635e4a0b5a1e63f67362ae9985226f9e6b5e0"
+    },
+    {
       "path": "conformance/receiver.mjs",
-      "bytes": 11112,
-      "sha256": "1c5e91417a376019052dedd32e3b228948baed24e61ce991cac13f7832d89478"
+      "bytes": 11321,
+      "sha256": "70f6365ecae736d294e574a3a7af0b2adfb0b3d15a137f8d4a5cef6b25c364d9"
     },
     {
       "path": "conformance/receiver.test.mjs",
@@ -102,7 +107,7 @@
     {
       "path": "conformance/schema.json",
       "bytes": 27730,
-      "sha256": "4a66a562b8c235915ba58451d280fab3e99fb6bcb4f1dc52f2a75842f1d28c84"
+      "sha256": "0273157c6fa7d1282fcfb66cf2a0d48818398b564dc961dbdfaf56c97361beef"
     },
     {
       "path": "conformance/verify-goldens.py",
@@ -115,24 +120,29 @@
       "sha256": "515e52d8d5b4a890ec9aac16240b3ce0a838354a576d95399da0ca946604723b"
     },
     {
+      "path": "evidence/candidate-5-source-manifest.json",
+      "bytes": 3685,
+      "sha256": "d09b278ee0708bca36d8a0a07c832e2e30c47352437bf2b950724607a1239018"
+    },
+    {
       "path": "package.json",
-      "bytes": 577,
-      "sha256": "bed8c8d4e71de5e02b67656eb4a623cab3ff646f485e19dd86ff04fd5136368e"
+      "bytes": 620,
+      "sha256": "898721b0b12e8189d2f4b55ee0a56372481315a896cdc22e8ed8c1901a4fa422"
     },
     {
       "path": "provenance.json",
-      "bytes": 4545,
-      "sha256": "f2032b50c0ff1ace26d3b14c1bc4ff73fa783bd84de6b82c77ea26f48a3bbc58"
+      "bytes": 4968,
+      "sha256": "ab22f7b1c0281689345ab16e4e73efe729a84c6c3de4ba785901932349de3306"
     },
     {
       "path": "scripts/verify-source.mjs",
       "bytes": 3300,
-      "sha256": "659f707f951319f792de188e677515362d82d2acd7145a4bd92c67dccfbead3f"
+      "sha256": "651b81522e8a1acfd8b9c1cced9f4d7be344a8e8e00f4fb5caca284dfd597dc8"
     },
     {
       "path": "test/assembly.test.mjs",
-      "bytes": 2879,
-      "sha256": "fc341e0fa84c81f5a37327be0402a68de90b190c22cf56a5b16ad4e737cb4064"
+      "bytes": 3005,
+      "sha256": "4237f31e78823a8b94fc84c49a94a0377c597aa6864fe5257588ff22c9871e98"
     }
   ]
 }

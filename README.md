@@ -1,8 +1,8 @@
 # Fuego / Nero shared Flow contract assembly
 
 Private local review assembly of **`@fuego-nero/flow-contract` `0.1.0-alpha.1`**.
-Both products approved the location/name/governance and the source candidate for
-offline conformance. **The assembled commit/manifest and normative amendment
+Both products approved the location/name/governance, offline baseline and
+normalized remote grant-subject meaning. **The corrected assembled commit/manifest and normative amendment
 still need both-owner acknowledgement before consumption or tagging.**
 
 The single normative entry point remains
@@ -12,14 +12,14 @@ schemas, capabilities, golden fixtures and offline conformance code.
 
 ## What is included
 
-- `conformance/schema.json`: the exact accepted candidate-4 JSON Schema.
+- `conformance/schema.json`: the exact corrected candidate-5 JSON Schema.
 - `capabilities.json`: explicit negotiated alpha identity and supported subset.
 - `conformance/fixtures/`: seven golden digest projections/messages and receipts.
-- `conformance/*.test.mjs`: the 99 accepted offline checks.
+- `conformance/*.test.mjs`: the 106 offline checks, including local grant-subject regressions.
 - `conformance/verify-goldens.py`: independent Python digest implementation.
 - `conformance/receiver.mjs`: **bounded in-memory conformance model only**.
 - `provenance.json`: exact source mapping to the accepted Fuego candidate;
-  19 files copied byte-for-byte, including model documentation.
+  20 files copied byte-for-byte, including model documentation.
 - `SOURCE-MANIFEST.json`: exhaustive source hashes, excluding itself and Git
   metadata to avoid self-reference. Its SHA-256 plus the Git commit form the pin.
 
@@ -28,6 +28,12 @@ root runtime export and no receiver export. Directly importing fixture/model
 files into an application would not provide authentication, persistence,
 dispatch or a safe live receiver. Node codecs are offline references; browser
 and Swift adapters must prove the same vectors and their own trusted boundaries.
+
+Both grant-context `principalId` fields mean the normalized remote Fuego caller
+subject. The separate local SDK actor/callee/device chain must be authenticated
+and explicitly mapped by a production adapter; this package does not implement
+that mapping. The first candidate-4 assembly remains an unreleased Git-history
+snapshot; corrected candidate-5 source is not silently treated as that old pin.
 
 ## Verification
 

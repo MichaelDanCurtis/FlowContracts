@@ -4,7 +4,9 @@
   "packageVersion": "0.1.0-alpha.1",
   "assemblyState": "unreleased-awaiting-joint-pin-acknowledgement",
   "negotiationRequires": ["packageName", "packageVersion", "sourceManifestSHA256"],
-  "schemaId": "urn:fuego-nero-flow:review-candidate:0.1.0-proposal-4",
+  "schemaId": "urn:fuego-nero-flow:review-candidate:0.1.0-proposal-5",
+  "grantSubjectNamespace": "normalized-remote-fuego-caller",
+  "sdkActorBindingImplemented": false,
   "wireVersions": {
     "definition": "fuego-nero-flow/0.1-candidate.1",
     "invocation": "fuego-nero-flow-invocation/0.1-candidate.1",

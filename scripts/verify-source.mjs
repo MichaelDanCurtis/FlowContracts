@@ -33,8 +33,8 @@ export function verifySource(root = fileURLToPath(new URL('../', import.meta.url
   walk(root);
   if (all.length !== listed.size || all.some(p => !listed.has(p))) throw new Error('ASSEMBLY_UNLISTED');
   const origin = JSON.parse(readFileSync(resolve(root, 'provenance.json')));
-  if (origin.sourceManifestSHA256 !== '515e52d8d5b4a890ec9aac16240b3ce0a838354a576d95399da0ca946604723b') throw new Error('ASSEMBLY_PROVENANCE');
-  const candidateBytes = readFileSync(resolve(root, 'evidence/candidate-4-source-manifest.json'));
+  if (origin.sourceManifestSHA256 !== 'd09b278ee0708bca36d8a0a07c832e2e30c47352437bf2b950724607a1239018') throw new Error('ASSEMBLY_PROVENANCE');
+  const candidateBytes = readFileSync(resolve(root, 'evidence/candidate-5-source-manifest.json'));
   if (sha(candidateBytes) !== origin.sourceManifestSHA256) throw new Error('ASSEMBLY_PROVENANCE');
   const candidate = JSON.parse(candidateBytes), used = new Set();
   for (const row of origin.copiedUnchanged) {

@@ -1,6 +1,6 @@
 # Query, cancellation, typed results and receiver authority — proposal
 
-Status: FUEGO-FLOW-002, review candidate 4 for normative contract 0.1.0. **Unpromoted. No production receiver.** Wire shapes and seven vectors are unchanged from candidate 3; original-handle reply validation is corrected. The inherited graph/primitive subset remains unchanged. New controls are versioned separately as `fuego-nero-flow-control/0.1-candidate.1`, results as `fuego-nero-flow-result/0.1-candidate.1` and replies as `fuego-nero-flow-reply/0.1-candidate.1`. Shared integration waits for Nero accept/change and a promoted package pin.
+Status: FUEGO-FLOW-003 correction, review candidate 5 for normative contract 0.1.0. **Unpromoted. No production receiver.** Wire shapes and seven vectors are unchanged; both normalized remote grant subjects are now checked. The inherited graph/primitive subset remains unchanged. New controls are versioned separately as `fuego-nero-flow-control/0.1-candidate.1`, results as `fuego-nero-flow-result/0.1-candidate.1` and replies as `fuego-nero-flow-reply/0.1-candidate.1`. Shared integration waits for Nero accept/change and a promoted package pin.
 
 ## Message identities and bounded values
 
@@ -21,6 +21,8 @@ Each new message's digest hashes the whole object excluding its own digest field
 ## Trusted identity and permission intersection
 
 Body `callerId`, scope, target and `authorityRef` are claims to match against authenticated transport/current grant stores. The adapter supplies **separate trusted server and device contexts**, including actual principal, scope, target binding, expiry, mode, allowed operations, exact permitted flow revisions and permitted dependency capability/revision/digest/effect. Both contexts must independently allow invocation. No union, publisher-team shortcut or self-reported caller is accepted. The receiver does not accept a context object from a browser or workflow argument.
+
+**Normalized subject versus local actor:** `authority.principalId` and `local.principalId` each mean the normalized **remote Fuego caller grant subject** in the same namespace as `request.callerId`; both must equal it. The local field does not name the SDK callee/executing plugin or device actor. A production adapter must separately authenticate the authoritative local ActionRun caller/callee/device chain and its explicitly authorized mapping/delegation to that remote subject. It must not compare raw SDK actor IDs to Fuego caller IDs, invent a mapping, or normalize a body-supplied identity. The conformance model verifies the equality/intersection of authored normalized contexts only; no SDK actor authentication or mapping implementation is included. This is a mandatory adapter gate before live admission.
 
 The offline model uses obvious `trusted-*-fixture` source markers to label authored inputs. **These strings establish no trust** and the model API is not safe as an exposed endpoint. No context builder, SDK ActionRun validation, gRPC identity binding, signature/key verification or live grant-store adapter exists in this package. Nero's actual local integration continues to derive caller identity from the existing authoritative ActionRun, separately from these fixtures.
 

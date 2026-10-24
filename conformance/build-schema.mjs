@@ -97,7 +97,7 @@ defs.reply = object({
 }, ['schemaVersion', 'commandId', 'commandDigest', 'operation', 'invocationId', 'executionDigest', 'scope', 'callerId', 'target', 'mode', 'observation', 'replyDigest']);
 export const schema = {
   $schema: 'https://json-schema.org/draft/2020-12/schema',
-  $id: 'urn:fuego-nero-flow:review-candidate:0.1.0-proposal-4',
+  $id: 'urn:fuego-nero-flow:review-candidate:0.1.0-proposal-5',
   ...ref('envelope'), $defs: defs,
 };
 if (process.argv[1] && import.meta.url === new URL(`file://${process.argv[1]}`).href) {

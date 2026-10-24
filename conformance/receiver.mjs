@@ -78,7 +78,9 @@ export function authorize(request, operation, authority, local, now) {
   remaining(authority.validUntil, now);
   remaining(local.validUntil, now);
   if (authority.revoked || local.revoked) fail('FLOW_REVOKED');
-  if (authority.principalId !== request.callerId || !equal(authority.scope, request.scope) || !equal(local.scope, request.scope)) fail('FLOW_CALLER_SCOPE');
+  // Both fields are normalized REMOTE Fuego grant subjects, not raw SDK actor IDs.
+  // A production adapter must authenticate and bind the distinct local SDK actor.
+  if (authority.principalId !== request.callerId || local.principalId !== request.callerId || !equal(authority.scope, request.scope) || !equal(local.scope, request.scope)) fail('FLOW_CALLER_SCOPE');
   if (!equal(authority.target, request.target) || !equal(local.target, request.target)) fail('FLOW_TARGET_BINDING');
   if (authority.mode !== request.mode || local.mode !== request.mode) fail('FLOW_MODE');
   if (authority.authorityRef !== request.authorityRef || !authority.operations.includes(operation) || !local.operations.includes(operation)) fail('FLOW_GRANT');

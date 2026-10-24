@@ -1,21 +1,26 @@
 {
   "schema": "fuego-nero-flow.provenance.v1",
   "contractRevisionAtAssembly": "0.1.0",
-  "sourceCandidate": "Fuego/contracts/flow/candidates/0.1.0-proposal-4",
-  "sourceManifestSHA256": "515e52d8d5b4a890ec9aac16240b3ce0a838354a576d95399da0ca946604723b",
-  "acceptanceMessage": "nero-flow-20261024-acceptance-003",
+  "sourceCandidate": "Fuego/contracts/flow/candidates/0.1.0-proposal-5",
+  "sourceManifestSHA256": "d09b278ee0708bca36d8a0a07c832e2e30c47352437bf2b950724607a1239018",
+  "assemblyAuthorizationMessages": [
+    "nero-flow-20261024-acceptance-003",
+    "nero-flow-20261024-principal-acceptance-003",
+    "nero-flow-20261024-candidate-005-acceptance"
+  ],
+  "assembledCommitAndManifestRequireJointAcknowledgement": true,
   "copiedUnchanged": [
     {
       "source": "RECEIVER-CONTRACT.md",
       "destination": "conformance/RECEIVER-CONTRACT.md",
-      "bytes": 10884,
-      "sha256": "35fad4eb900eab5d86342892c0d64db5d79327797c72bb516f9f99a6c1822dff"
+      "bytes": 11703,
+      "sha256": "540a6e87e2de8ed77f508d09afdae3c70d306c859504b953afa0558e3248359d"
     },
     {
       "source": "build-schema.mjs",
       "destination": "conformance/build-schema.mjs",
       "bytes": 6887,
-      "sha256": "52afc580995dbe9bd39ac1f7f414c57e30efee7c791bf61466a5ff951ecdc227"
+      "sha256": "957e3dbbb59f5400d89509acf53f417f940f309f4b361d9e0d32c116ad7b804a"
     },
     {
       "source": "contract.mjs",
@@ -90,10 +95,16 @@
       "sha256": "c83b165de1dba53211fae82693042e05b97648357bbbfde9dcbeea51265916af"
     },
     {
+      "source": "principal-regressions.test.mjs",
+      "destination": "conformance/principal-regressions.test.mjs",
+      "bytes": 2226,
+      "sha256": "09bc2b4d1732452d122c7e80752635e4a0b5a1e63f67362ae9985226f9e6b5e0"
+    },
+    {
       "source": "receiver.mjs",
       "destination": "conformance/receiver.mjs",
-      "bytes": 11112,
-      "sha256": "1c5e91417a376019052dedd32e3b228948baed24e61ce991cac13f7832d89478"
+      "bytes": 11321,
+      "sha256": "70f6365ecae736d294e574a3a7af0b2adfb0b3d15a137f8d4a5cef6b25c364d9"
     },
     {
       "source": "receiver.test.mjs",
@@ -111,7 +122,7 @@
       "source": "schema.json",
       "destination": "conformance/schema.json",
       "bytes": 27730,
-      "sha256": "4a66a562b8c235915ba58451d280fab3e99fb6bcb4f1dc52f2a75842f1d28c84"
+      "sha256": "0273157c6fa7d1282fcfb66cf2a0d48818398b564dc961dbdfaf56c97361beef"
     },
     {
       "source": "verify-goldens.py",

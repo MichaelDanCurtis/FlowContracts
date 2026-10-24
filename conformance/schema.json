@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "urn:fuego-nero-flow:review-candidate:0.1.0-proposal-4",
+  "$id": "urn:fuego-nero-flow:review-candidate:0.1.0-proposal-5",
   "$ref": "#/$defs/envelope",
   "$defs": {
     "scalar": {

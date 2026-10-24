@@ -17,9 +17,10 @@ test('assembly requires complete negotiated pin and advertises no execution/auth
   assert.deepEqual(c.negotiationRequires, ['packageName', 'packageVersion', 'sourceManifestSHA256']);
   assert.deepEqual(c.executionRuntimes, []); assert.equal(c.authenticationImplementation, false); assert.equal(c.durableStoreImplementation, false);
   assert.deepEqual(c.receiptReasonExtensions, ['execution-failed']);
+  assert.equal(c.grantSubjectNamespace, 'normalized-remote-fuego-caller'); assert.equal(c.sdkActorBindingImplemented, false);
 });
 test('assembly exhaustive source pins and exact accepted-candidate provenance verify', () => {
-  const proof = verifySource(); assert.equal(proof.copiedCandidateFiles, 19); assert.match(proof.sourceManifestSHA256, /^[a-f0-9]{64}$/);
+  const proof = verifySource(); assert.equal(proof.copiedCandidateFiles, 20); assert.match(proof.sourceManifestSHA256, /^[a-f0-9]{64}$/);
 });
 const root = fileURLToPath(new URL('../', import.meta.url));
 function withCopy(check) {

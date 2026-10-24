@@ -9,7 +9,7 @@
     "./capabilities": "./capabilities.json"
   },
   "scripts": {
-    "test": "node --test conformance/contract.test.mjs conformance/peer-regressions.test.mjs conformance/receiver.test.mjs conformance/reply-regressions.test.mjs test/assembly.test.mjs",
+    "test": "node --test conformance/contract.test.mjs conformance/peer-regressions.test.mjs conformance/receiver.test.mjs conformance/reply-regressions.test.mjs conformance/principal-regressions.test.mjs test/assembly.test.mjs",
     "verify:source": "node scripts/verify-source.mjs",
     "verify:goldens": "python3 conformance/verify-goldens.py"
   }
