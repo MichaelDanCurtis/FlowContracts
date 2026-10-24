@@ -1,0 +1,16 @@
+{
+  "name": "@fuego-nero/flow-contract",
+  "version": "0.1.0-alpha.1",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "exports": {
+    "./schema": "./conformance/schema.json",
+    "./capabilities": "./capabilities.json"
+  },
+  "scripts": {
+    "test": "node --test conformance/contract.test.mjs conformance/peer-regressions.test.mjs conformance/receiver.test.mjs conformance/reply-regressions.test.mjs test/assembly.test.mjs",
+    "verify:source": "node scripts/verify-source.mjs",
+    "verify:goldens": "python3 conformance/verify-goldens.py"
+  }
+}

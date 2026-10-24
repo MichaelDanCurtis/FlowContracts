@@ -1,0 +1,138 @@
+{
+  "schema": "fuego-nero-flow.assembled-source.v1",
+  "packageName": "@fuego-nero/flow-contract",
+  "packageVersion": "0.1.0-alpha.1",
+  "candidateManifestSHA256": "515e52d8d5b4a890ec9aac16240b3ce0a838354a576d95399da0ca946604723b",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3520,
+      "sha256": "b69ecd0775e3b27847fadba8b9f0f1220f7cf5297f51299542f2dd11f3e32ff1"
+    },
+    {
+      "path": "capabilities.json",
+      "bytes": 1213,
+      "sha256": "66949c8941657ac049f893185d0262dbe6b3ebccd923d0e784ebadc5609c8f85"
+    },
+    {
+      "path": "conformance/RECEIVER-CONTRACT.md",
+      "bytes": 10884,
+      "sha256": "35fad4eb900eab5d86342892c0d64db5d79327797c72bb516f9f99a6c1822dff"
+    },
+    {
+      "path": "conformance/build-schema.mjs",
+      "bytes": 6887,
+      "sha256": "52afc580995dbe9bd39ac1f7f414c57e30efee7c791bf61466a5ff951ecdc227"
+    },
+    {
+      "path": "conformance/contract.mjs",
+      "bytes": 12434,
+      "sha256": "6db20999e66a485e2c76bb49ce2d35bfa45290da480583f5ea3e3e5f084daddb"
+    },
+    {
+      "path": "conformance/contract.test.mjs",
+      "bytes": 10853,
+      "sha256": "0d7dee17c8026cd64a60d7e2b65517dc26011ee9c36f2b22645ebdc0cfe71c13"
+    },
+    {
+      "path": "conformance/create-control-fixtures.mjs",
+      "bytes": 2503,
+      "sha256": "a6caed286c0a1280e7a01816353b4a041349a5296ee4d9058b4eea5be3a26b34"
+    },
+    {
+      "path": "conformance/create-fixtures.mjs",
+      "bytes": 3308,
+      "sha256": "de197cb906575fc809f55b3e38347dde0517b6d33b15ae7e1324cc7f2bba706b"
+    },
+    {
+      "path": "conformance/fixtures/cancel.json",
+      "bytes": 701,
+      "sha256": "70da5c24aac9d6a5bef5277ed266053fc1ac82fd7ea4023fa26a13329a8095d2"
+    },
+    {
+      "path": "conformance/fixtures/definition.json",
+      "bytes": 4770,
+      "sha256": "0ffb57fe1b285ac2f9db6281c91a83ab4a33544a5f05ed4f8380d0819e09e0da"
+    },
+    {
+      "path": "conformance/fixtures/invocation.json",
+      "bytes": 909,
+      "sha256": "a943be12f696cbbcac00d34d1a1bc3822630d8c29aa5b5c73f9f9e865435b341"
+    },
+    {
+      "path": "conformance/fixtures/query.json",
+      "bytes": 699,
+      "sha256": "739365b95591cc9fef8ef47d9fb45dd9cbbf51445def21b0f302955a10ba1463"
+    },
+    {
+      "path": "conformance/fixtures/receipts.json",
+      "bytes": 1430,
+      "sha256": "be57e55348768459ddadf6d5c8a75726e689b4214f88c68eadcff70fafeae503"
+    },
+    {
+      "path": "conformance/fixtures/reply.json",
+      "bytes": 1894,
+      "sha256": "904be3605d5d942b5b500aba290d296e1c788233bbcd20cf6da5205d9e46fff6"
+    },
+    {
+      "path": "conformance/fixtures/result.json",
+      "bytes": 845,
+      "sha256": "68a9208c29d8c75e2983ee02a9716ae59b7096565a5f504a04d1b6ef067f2191"
+    },
+    {
+      "path": "conformance/peer-regressions.test.mjs",
+      "bytes": 2423,
+      "sha256": "c83b165de1dba53211fae82693042e05b97648357bbbfde9dcbeea51265916af"
+    },
+    {
+      "path": "conformance/receiver.mjs",
+      "bytes": 11112,
+      "sha256": "1c5e91417a376019052dedd32e3b228948baed24e61ce991cac13f7832d89478"
+    },
+    {
+      "path": "conformance/receiver.test.mjs",
+      "bytes": 14332,
+      "sha256": "ef94c1c5328876adf759c0c586992dc6e783a710bf8f36102d087b5ca23abf95"
+    },
+    {
+      "path": "conformance/reply-regressions.test.mjs",
+      "bytes": 2851,
+      "sha256": "2f7cdc8152d298582e9c44fb00422405828fe41198eea1c794544cfa048d362c"
+    },
+    {
+      "path": "conformance/schema.json",
+      "bytes": 27730,
+      "sha256": "4a66a562b8c235915ba58451d280fab3e99fb6bcb4f1dc52f2a75842f1d28c84"
+    },
+    {
+      "path": "conformance/verify-goldens.py",
+      "bytes": 2494,
+      "sha256": "e50cf5301ac1eb51ca0736afc0396fe7979ae808e9911a88b5033bd76faf56e5"
+    },
+    {
+      "path": "evidence/candidate-4-source-manifest.json",
+      "bytes": 3520,
+      "sha256": "515e52d8d5b4a890ec9aac16240b3ce0a838354a576d95399da0ca946604723b"
+    },
+    {
+      "path": "package.json",
+      "bytes": 577,
+      "sha256": "bed8c8d4e71de5e02b67656eb4a623cab3ff646f485e19dd86ff04fd5136368e"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 4545,
+      "sha256": "f2032b50c0ff1ace26d3b14c1bc4ff73fa783bd84de6b82c77ea26f48a3bbc58"
+    },
+    {
+      "path": "scripts/verify-source.mjs",
+      "bytes": 3300,
+      "sha256": "659f707f951319f792de188e677515362d82d2acd7145a4bd92c67dccfbead3f"
+    },
+    {
+      "path": "test/assembly.test.mjs",
+      "bytes": 2879,
+      "sha256": "fc341e0fa84c81f5a37327be0402a68de90b190c22cf56a5b16ad4e737cb4064"
+    }
+  ]
+}

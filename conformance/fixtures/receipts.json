@@ -1,0 +1,42 @@
+[
+  {
+    "schemaVersion": "fuego-nero-flow-receipt/0.1-candidate.1",
+    "invocationId": "fixture-invocation-1",
+    "executionDigest": "sha256:3bbeb6f7b3130eb9af94e560991b53c85af1cc1c63e85ea2fc61bdcb7924547d",
+    "sequence": 0,
+    "outcome": "accepted",
+    "reason": "none"
+  },
+  {
+    "schemaVersion": "fuego-nero-flow-receipt/0.1-candidate.1",
+    "invocationId": "fixture-invocation-1",
+    "executionDigest": "sha256:3bbeb6f7b3130eb9af94e560991b53c85af1cc1c63e85ea2fc61bdcb7924547d",
+    "sequence": 1,
+    "outcome": "started",
+    "reason": "none"
+  },
+  {
+    "schemaVersion": "fuego-nero-flow-receipt/0.1-candidate.1",
+    "invocationId": "fixture-invocation-1",
+    "executionDigest": "sha256:3bbeb6f7b3130eb9af94e560991b53c85af1cc1c63e85ea2fc61bdcb7924547d",
+    "sequence": 2,
+    "outcome": "cancel-pending",
+    "reason": "none"
+  },
+  {
+    "schemaVersion": "fuego-nero-flow-receipt/0.1-candidate.1",
+    "invocationId": "fixture-invocation-1",
+    "executionDigest": "sha256:3bbeb6f7b3130eb9af94e560991b53c85af1cc1c63e85ea2fc61bdcb7924547d",
+    "sequence": 3,
+    "outcome": "uncertain",
+    "reason": "effect-unknown"
+  },
+  {
+    "schemaVersion": "fuego-nero-flow-receipt/0.1-candidate.1",
+    "invocationId": "fixture-invocation-1",
+    "executionDigest": "sha256:3bbeb6f7b3130eb9af94e560991b53c85af1cc1c63e85ea2fc61bdcb7924547d",
+    "sequence": 4,
+    "outcome": "completed",
+    "reason": "none"
+  }
+]

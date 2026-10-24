@@ -1,0 +1,117 @@
+{
+  "schema": "fuego.flow.candidate.source-manifest.v1",
+  "contractRevision": "0.1.0",
+  "candidate": "0.1.0-proposal-4",
+  "files": [
+    {
+      "path": "PACKAGE-PROPOSAL.md",
+      "bytes": 2722,
+      "sha256": "a4f7b41888de92c3a176b39cd3a0d3bcf0cbb3a6021f6423b364028aed13bbf3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11876,
+      "sha256": "6079ee6e35e30ef17f8e21970f548360dc415ce14e2168df49bd4b3da321920b"
+    },
+    {
+      "path": "RECEIVER-CONTRACT.md",
+      "bytes": 10884,
+      "sha256": "35fad4eb900eab5d86342892c0d64db5d79327797c72bb516f9f99a6c1822dff"
+    },
+    {
+      "path": "build-schema.mjs",
+      "bytes": 6887,
+      "sha256": "52afc580995dbe9bd39ac1f7f414c57e30efee7c791bf61466a5ff951ecdc227"
+    },
+    {
+      "path": "contract.mjs",
+      "bytes": 12434,
+      "sha256": "6db20999e66a485e2c76bb49ce2d35bfa45290da480583f5ea3e3e5f084daddb"
+    },
+    {
+      "path": "contract.test.mjs",
+      "bytes": 10853,
+      "sha256": "0d7dee17c8026cd64a60d7e2b65517dc26011ee9c36f2b22645ebdc0cfe71c13"
+    },
+    {
+      "path": "create-control-fixtures.mjs",
+      "bytes": 2503,
+      "sha256": "a6caed286c0a1280e7a01816353b4a041349a5296ee4d9058b4eea5be3a26b34"
+    },
+    {
+      "path": "create-fixtures.mjs",
+      "bytes": 3308,
+      "sha256": "de197cb906575fc809f55b3e38347dde0517b6d33b15ae7e1324cc7f2bba706b"
+    },
+    {
+      "path": "fixtures/cancel.json",
+      "bytes": 701,
+      "sha256": "70da5c24aac9d6a5bef5277ed266053fc1ac82fd7ea4023fa26a13329a8095d2"
+    },
+    {
+      "path": "fixtures/definition.json",
+      "bytes": 4770,
+      "sha256": "0ffb57fe1b285ac2f9db6281c91a83ab4a33544a5f05ed4f8380d0819e09e0da"
+    },
+    {
+      "path": "fixtures/invocation.json",
+      "bytes": 909,
+      "sha256": "a943be12f696cbbcac00d34d1a1bc3822630d8c29aa5b5c73f9f9e865435b341"
+    },
+    {
+      "path": "fixtures/query.json",
+      "bytes": 699,
+      "sha256": "739365b95591cc9fef8ef47d9fb45dd9cbbf51445def21b0f302955a10ba1463"
+    },
+    {
+      "path": "fixtures/receipts.json",
+      "bytes": 1430,
+      "sha256": "be57e55348768459ddadf6d5c8a75726e689b4214f88c68eadcff70fafeae503"
+    },
+    {
+      "path": "fixtures/reply.json",
+      "bytes": 1894,
+      "sha256": "904be3605d5d942b5b500aba290d296e1c788233bbcd20cf6da5205d9e46fff6"
+    },
+    {
+      "path": "fixtures/result.json",
+      "bytes": 845,
+      "sha256": "68a9208c29d8c75e2983ee02a9716ae59b7096565a5f504a04d1b6ef067f2191"
+    },
+    {
+      "path": "package.json",
+      "bytes": 323,
+      "sha256": "04d008f69f41dcbddf53463c91ca249b647283219c4c795c7020fa11358608cd"
+    },
+    {
+      "path": "peer-regressions.test.mjs",
+      "bytes": 2423,
+      "sha256": "c83b165de1dba53211fae82693042e05b97648357bbbfde9dcbeea51265916af"
+    },
+    {
+      "path": "receiver.mjs",
+      "bytes": 11112,
+      "sha256": "1c5e91417a376019052dedd32e3b228948baed24e61ce991cac13f7832d89478"
+    },
+    {
+      "path": "receiver.test.mjs",
+      "bytes": 14332,
+      "sha256": "ef94c1c5328876adf759c0c586992dc6e783a710bf8f36102d087b5ca23abf95"
+    },
+    {
+      "path": "reply-regressions.test.mjs",
+      "bytes": 2851,
+      "sha256": "2f7cdc8152d298582e9c44fb00422405828fe41198eea1c794544cfa048d362c"
+    },
+    {
+      "path": "schema.json",
+      "bytes": 27730,
+      "sha256": "4a66a562b8c235915ba58451d280fab3e99fb6bcb4f1dc52f2a75842f1d28c84"
+    },
+    {
+      "path": "verify-goldens.py",
+      "bytes": 2494,
+      "sha256": "e50cf5301ac1eb51ca0736afc0396fe7979ae808e9911a88b5033bd76faf56e5"
+    }
+  ]
+}

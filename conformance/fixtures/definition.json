@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "fuego-nero-flow/0.1-candidate.1",
+  "contractRevision": "0.1.0",
+  "definitionId": "flow-fixture-hello",
+  "revisionId": "revision-1",
+  "profile": "local-ephemeral",
+  "metadata": {
+    "title": "Review a fixture message",
+    "description": "Synthetic typed input through mapping and review to a pinned mock capability. No live tools.",
+    "owner": {
+      "scope": "personal",
+      "id": "fixture-owner"
+    },
+    "origin": {
+      "product": "fuego",
+      "deviceId": "fixture-device",
+      "authorId": "fixture-author"
+    },
+    "lifecycle": "published",
+    "visibility": "private"
+  },
+  "interface": {
+    "inputs": [
+      {
+        "name": "message",
+        "type": "string"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "message",
+        "type": "string"
+      }
+    ]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "start",
+        "kind": "input",
+        "version": 1,
+        "inputs": [],
+        "outputs": [
+          {
+            "name": "message",
+            "type": "string"
+          }
+        ],
+        "arguments": []
+      },
+      {
+        "id": "map",
+        "kind": "map",
+        "version": 1,
+        "inputs": [
+          {
+            "name": "message",
+            "type": "string"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "message",
+            "type": "string"
+          }
+        ],
+        "arguments": [
+          {
+            "port": "message",
+            "binding": {
+              "node": "start",
+              "port": "message"
+            }
+          }
+        ]
+      },
+      {
+        "id": "review",
+        "kind": "review",
+        "version": 1,
+        "inputs": [
+          {
+            "name": "message",
+            "type": "string"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "message",
+            "type": "string"
+          }
+        ],
+        "arguments": [
+          {
+            "port": "message",
+            "binding": {
+              "node": "map",
+              "port": "message"
+            }
+          }
+        ]
+      },
+      {
+        "id": "mock",
+        "kind": "capability",
+        "version": 1,
+        "inputs": [
+          {
+            "name": "message",
+            "type": "string"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "message",
+            "type": "string"
+          }
+        ],
+        "arguments": [
+          {
+            "port": "message",
+            "binding": {
+              "node": "review",
+              "port": "message"
+            }
+          }
+        ],
+        "dependency": "mockEcho",
+        "bindingSlot": "desktop",
+        "effect": "read"
+      },
+      {
+        "id": "done",
+        "kind": "result",
+        "version": 1,
+        "inputs": [
+          {
+            "name": "message",
+            "type": "string"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "message",
+            "type": "string"
+          }
+        ],
+        "arguments": [
+          {
+            "port": "message",
+            "binding": {
+              "node": "mock",
+              "port": "message"
+            }
+          }
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "source": "start",
+        "target": "map",
+        "branch": "next"
+      },
+      {
+        "source": "map",
+        "target": "review",
+        "branch": "next"
+      },
+      {
+        "source": "review",
+        "target": "mock",
+        "branch": "next"
+      },
+      {
+        "source": "mock",
+        "target": "done",
+        "branch": "next"
+      }
+    ]
+  },
+  "dependencies": [
+    {
+      "id": "mockEcho",
+      "capability": "fixture.echo",
+      "revision": "1",
+      "digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  ],
+  "bindingSlots": [
+    {
+      "id": "desktop",
+      "kind": "device"
+    }
+  ],
+  "policy": {
+    "timeoutMs": 60000,
+    "maxSteps": 5,
+    "maxNesting": 0,
+    "maxModelCalls": 0
+  },
+  "presentation": {
+    "nodes": [
+      {
+        "id": "start",
+        "label": "start",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "id": "map",
+        "label": "map",
+        "x": 100,
+        "y": 0
+      },
+      {
+        "id": "review",
+        "label": "review",
+        "x": 200,
+        "y": 0
+      },
+      {
+        "id": "mock",
+        "label": "mock",
+        "x": 300,
+        "y": 0
+      },
+      {
+        "id": "done",
+        "label": "done",
+        "x": 400,
+        "y": 0
+      }
+    ]
+  },
+  "digests": {
+    "content": "sha256:fcf07d621aeb771f74cc5773b3ea964ea8896ea137d5f5cef22446d4560f1cc3",
+    "semantic": "sha256:305e09c26a3fa7a7a9a9e90eb225fbd55d6a0adeb51d3f86dc6e7f54cd34ee44"
+  }
+}

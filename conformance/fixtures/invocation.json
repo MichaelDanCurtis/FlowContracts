@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "fuego-nero-flow-invocation/0.1-candidate.1",
+  "invocationId": "fixture-invocation-1",
+  "idempotencyKey": "fixture-request-1",
+  "mode": "fixture",
+  "scope": {
+    "kind": "personal",
+    "id": "fixture-owner"
+  },
+  "callerId": "fixture-caller",
+  "rootRunId": "fixture-root",
+  "parentRunId": "fixture-parent",
+  "nodeId": "callNero",
+  "definitionId": "flow-fixture-hello",
+  "revisionId": "revision-1",
+  "semanticDigest": "sha256:305e09c26a3fa7a7a9a9e90eb225fbd55d6a0adeb51d3f86dc6e7f54cd34ee44",
+  "target": {
+    "deviceId": "fixture-device",
+    "bindingRevision": "fixture-binding-1"
+  },
+  "deadline": "2030-01-01T00:00:00.000Z",
+  "inputs": [
+    {
+      "port": "message",
+      "value": "Synthetic hello — café 🔥"
+    }
+  ],
+  "authorityRef": "fixture-authority-only",
+  "executionDigest": "sha256:3bbeb6f7b3130eb9af94e560991b53c85af1cc1c63e85ea2fc61bdcb7924547d"
+}

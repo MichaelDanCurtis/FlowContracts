@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "fuego-nero-flow-reply/0.1-candidate.1",
+  "commandId": "fixture-query-1",
+  "commandDigest": "sha256:0c6cfac66f8d5dfcc27934396fa554f381c41a216252b7bc16e8ac8055fb6633",
+  "operation": "query",
+  "scope": {
+    "kind": "personal",
+    "id": "fixture-owner"
+  },
+  "callerId": "fixture-caller",
+  "invocationId": "fixture-invocation-1",
+  "executionDigest": "sha256:3bbeb6f7b3130eb9af94e560991b53c85af1cc1c63e85ea2fc61bdcb7924547d",
+  "target": {
+    "deviceId": "fixture-device",
+    "bindingRevision": "fixture-binding-1"
+  },
+  "mode": "fixture",
+  "observation": "found",
+  "receipt": {
+    "schemaVersion": "fuego-nero-flow-receipt/0.1-candidate.1",
+    "invocationId": "fixture-invocation-1",
+    "executionDigest": "sha256:3bbeb6f7b3130eb9af94e560991b53c85af1cc1c63e85ea2fc61bdcb7924547d",
+    "sequence": 1,
+    "outcome": "completed",
+    "reason": "none"
+  },
+  "result": {
+    "schemaVersion": "fuego-nero-flow-result/0.1-candidate.1",
+    "scope": {
+      "kind": "personal",
+      "id": "fixture-owner"
+    },
+    "callerId": "fixture-caller",
+    "invocationId": "fixture-invocation-1",
+    "executionDigest": "sha256:3bbeb6f7b3130eb9af94e560991b53c85af1cc1c63e85ea2fc61bdcb7924547d",
+    "definitionId": "flow-fixture-hello",
+    "revisionId": "revision-1",
+    "semanticDigest": "sha256:305e09c26a3fa7a7a9a9e90eb225fbd55d6a0adeb51d3f86dc6e7f54cd34ee44",
+    "target": {
+      "deviceId": "fixture-device",
+      "bindingRevision": "fixture-binding-1"
+    },
+    "mode": "fixture",
+    "sequence": 1,
+    "outcome": "completed",
+    "reason": "none",
+    "outputs": [
+      {
+        "port": "message",
+        "value": "Synthetic hello — café 🔥"
+      }
+    ],
+    "resultDigest": "sha256:98a4b5b395a82ca60fc5e43e9aabc769d76b811a1bc5b7e45d6c1282cf81172d"
+  },
+  "replyDigest": "sha256:d3a03db492f7d2fbba04475754cc4ed75a7da89ece9b396777e416d1a9e68dbd"
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "fuego-nero-flow-control/0.1-candidate.1",
+  "commandId": "fixture-cancel-1",
+  "operation": "cancel",
+  "scope": {
+    "kind": "personal",
+    "id": "fixture-owner"
+  },
+  "callerId": "fixture-caller",
+  "invocationId": "fixture-invocation-1",
+  "idempotencyKey": "fixture-request-1",
+  "executionDigest": "sha256:3bbeb6f7b3130eb9af94e560991b53c85af1cc1c63e85ea2fc61bdcb7924547d",
+  "target": {
+    "deviceId": "fixture-device",
+    "bindingRevision": "fixture-binding-1"
+  },
+  "mode": "fixture",
+  "deadline": "2030-01-01T00:00:00.000Z",
+  "authorityRef": "fixture-authority-only",
+  "commandDigest": "sha256:34d905b50f9c03fb86a74721d6e421d14f2973e90e754f1f9bff5c719ad40e36"
+}
